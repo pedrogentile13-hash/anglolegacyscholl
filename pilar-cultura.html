@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilar 2: Cultura | Líder em Mim 2026</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        * {
+            transition: all 0.3s ease;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 50%, #b45309 100%);
+        }
+
+        .card-hover {
+            transform: translateY(0);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(245, 158, 11, 0.15);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 glass">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-gradient-to-br from-blue-900 to-blue-600 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-graduation-cap text-white text-lg"></i>
+                </div>
+                <a href="index.html" class="text-xl font-black text-blue-900 hidden sm:inline hover:text-blue-600">Anglo Legacy</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <div class="flex gap-2 bg-gray-100 rounded-full p-1">
+                    <button id="lang-pt" class="lang-btn px-4 py-2 rounded-full font-semibold text-sm bg-blue-600 text-white transition" data-lang="pt">
+                        PT
+                    </button>
+                    <button id="lang-en" class="lang-btn px-4 py-2 rounded-full font-semibold text-sm text-gray-600 hover:text-gray-900 transition" data-lang="en">
+                        EN
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20 sm:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <a href="index.html" class="inline-flex items-center gap-2 text-amber-100 hover:text-white mb-6 transition">
+                <i class="fas fa-arrow-left"></i>
+                <span data-pt="Voltar" data-en="Back"></span>
+            </a>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight mb-6" data-pt="Pilar 2: Cultura Escolar" data-en="Pillar 2: School Culture"></h1>
+            <p class="text-lg sm:text-xl text-amber-100 mb-8 max-w-2xl leading-relaxed" data-pt="Uma cultura que valoriza o protagonismo, a excelência e a responsabilidade social de cada membro da comunidade escolar." data-en="A culture that values protagonism, excellence and social responsibility of each member of the school community."></p>
+        </div>
+    </section>
+
+    <!-- Conteúdo Pilar 2 -->
+    <section class="py-20 sm:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-black text-blue-900 mb-4" data-pt="Fundamentos da Cultura Escolar" data-en="Foundations of School Culture"></h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto" data-pt="Conheça como construímos uma cultura transformadora onde alunos são protagonistas de seu aprendizado." data-en="Learn how we build a transformative culture where students are protagonists of their learning."></p>
+            </div>
+
+            <div class="grid grid-cols-1 gap-8 sm:gap-10">
+                <!-- Item 1.4 -->
+                <div class="card-hover bg-white rounded-3xl p-8 sm:p-10 border-2 border-amber-100 hover:border-amber-300">
+                    <div class="flex items-start gap-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-amber-500 to-amber-400 rounded-2xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-presentation text-white text-3xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl sm:text-3xl font-bold text-blue-900 mb-4" data-pt="1.4 Aulas Diretas e Engajadoras" data-en="1.4 Direct and Engaging Classes"></h3>
+                            <p class="text-gray-700 leading-relaxed mb-4 text-lg" data-pt="Nossas aulas são experiências vivas de aprendizado onde metodologias ativas colocam o aluno no centro do processo educativo. Professores são facilitadores que orientam, desafiam e inspiram." data-en="Our classes are living learning experiences where active methodologies place students at the center of the educational process. Teachers are facilitators who guide, challenge, and inspire."></p>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-amber-600 text-xl flex-shrink-0 mt-1"></i>
+                                    <span class="text-gray-700" data-pt="Aprendizagem baseada em projetos e problemas" data-en="Project and problem-based learning"></span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-amber-600 text-xl flex-shrink-0 mt-1"></i>
+                                    <span class="text-gray-700" data-pt="Aulas participativas e colaborativas" data-en="Participatory and collaborative classes"></span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-amber-600 text-xl flex-shrink-0 mt-1"></i>
+                                    <span class="text-gray-700" data-pt="Tecnologia como ferramenta de potencialização" data-en="Technology as an empowerment tool"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 1.5 -->
+                <div class="card-hover bg-white rounded-3xl p-8 sm:p-10 border-2 border-amber-100 hover:border-amber-300">
+                    <div class="flex items-start gap-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-amber-500 to-amber-400 rounded-2xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-sitemap text-white text-3xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl sm:text-3xl font-bold text-blue-900 mb-4" data-pt="1.5 Abordagens Integradas" data-en="1.5 Integrated Approaches"></h3>
+                            <p class="text-gray-700 leading-relaxed mb-4 text-lg" data-pt="Quebramos as barreiras entre disciplinas, criando projetos interdisciplinares que conectam aprendizado escolar com a realidade vivida pelos alunos e contextos sociais." data-en="We break down barriers between subjects, creating interdisciplinary projects that connect school learning with the reality experienced by students and social contexts."></p>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-amber-600 text-xl flex-shrink-0 mt-1"></i>
+                                    <span class="text-gray-700" data-pt="Projetos interdisciplinares integrados" data-en="Integrated interdisciplinary projects"></span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-amber-600 text-xl flex-shrink-0 mt-1"></i>
+                                    <span class="text-gray-700" data-pt="Conexão com problemas reais da comunidade" data-en="Connection to real community issues"></span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-amber-600 text-xl flex-shrink-0 mt-1"></i>
+                                    <span class="text-gray-700" data-pt="Aprendizado significativo e contextualizado" data-en="Meaningful and contextualized learning"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 1.6 -->
+                <div class="card-hover bg-white rounded-3xl p-8 sm:p-10 border-2 border-amber-100 hover:border-amber-300">
+                    <div class="flex items-start gap-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-amber-500 to-amber-400 rounded-2xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-hands-helping text-white text-3xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl sm:text-3xl font-bold text-blue-900 mb-4" data-pt="1.6 Serviços Sociais e Responsabilidade" data-en="1.6 Social Services and Responsibility"></h3>
+                            <p class="text-gray-700 leading-relaxed mb-4 text-lg" data-pt="Acreditamos que aprender é também servir. Desenvolvemos programas que cultivam empatia, solidariedade e responsabilidade social, transformando alunos em agentes de mudança em suas comunidades." data-en="We believe that learning is also serving. We develop programs that cultivate empathy, solidarity, and social responsibility, transforming students into agents of change in their communities."></p>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-amber-600 text-xl flex-shrink-0 mt-1"></i>
+                                    <span class="text-gray-700" data-pt="Projetos de voluntariado e extensão comunitária" data-en="Volunteering and community outreach projects"></span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-amber-600 text-xl flex-shrink-0 mt-1"></i>
+                                    <span class="text-gray-700" data-pt="Iniciativas de sustentabilidade ambiental" data-en="Environmental sustainability initiatives"></span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-amber-600 text-xl flex-shrink-0 mt-1"></i>
+                                    <span class="text-gray-700" data-pt="Desenvolvimento de valores e ética cidadã" data-en="Development of values and civic ethics"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Protagonismo Section -->
+    <section class="py-20 sm:py-28 bg-amber-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-black text-blue-900 mb-12 text-center" data-pt="O Protagonismo em Ação" data-en="Protagonism in Action"></h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-2xl p-6 text-center border-l-4 border-amber-500">
+                    <i class="fas fa-lightbulb text-amber-500 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2" data-pt="Criatividade" data-en="Creativity"></h3>
+                    <p class="text-gray-600" data-pt="Espaço para expressar ideias e inovar" data-en="Space to express ideas and innovate"></p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 text-center border-l-4 border-amber-500">
+                    <i class="fas fa-users text-amber-500 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2" data-pt="Colaboração" data-en="Collaboration"></h3>
+                    <p class="text-gray-600" data-pt="Trabalho em equipe com propósito comum" data-en="Teamwork with common purpose"></p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 text-center border-l-4 border-amber-500">
+                    <i class="fas fa-chart-line text-amber-500 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2" data-pt="Autonomia" data-en="Autonomy"></h3>
+                    <p class="text-gray-600" data-pt="Responsabilidade por seu próprio crescimento" data-en="Responsibility for their own growth"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-white py-16 sm:py-24">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl sm:text-4xl font-black text-blue-900 mb-6" data-pt="Explore os Outros Pilares" data-en="Explore the Other Pillars"></h2>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="pilar-lideranca.html" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition text-lg" data-pt="Pilar 1: Liderança" data-en="Pillar 1: Leadership"></a>
+                <a href="pilar-academico.html" class="bg-purple-600 text-white font-bold py-3 px-8 rounded-full hover:bg-purple-700 transition text-lg" data-pt="Pilar 3: Excelência" data-en="Pillar 3: Excellence"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12 sm:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-300 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-graduation-cap text-blue-900 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-black">Anglo Legacy</h3>
+                            <p class="text-xs text-blue-100" data-pt="Educação Transformadora" data-en="Transformative Education"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4" data-pt="Navegação" data-en="Navigation"></h4>
+                    <ul class="space-y-2 text-blue-100">
+                        <li><a href="index.html" class="hover:text-amber-400 transition" data-pt="Início" data-en="Home"></a></li>
+                        <li><a href="pilar-lideranca.html" class="hover:text-amber-400 transition" data-pt="Liderança" data-en="Leadership"></a></li>
+                        <li><a href="pilar-cultura.html" class="hover:text-amber-400 transition" data-pt="Cultura" data-en="Culture"></a></li>
+                        <li><a href="pilar-academico.html" class="hover:text-amber-400 transition" data-pt="Excelência" data-en="Excellence"></a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4" data-pt="Redes Sociais" data-en="Social Networks"></h4>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-blue-700 hover:bg-amber-400 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-blue-700 hover:bg-amber-400 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-blue-700 hover:bg-amber-400 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-blue-700 hover:bg-amber-400 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-blue-700 pt-8">
+                <p class="text-center text-blue-100 text-sm">
+                    <span data-pt="© 2026 Anglo Morumbi - Legacy School. Todos os direitos reservados." data-en="© 2026 Anglo Morumbi - Legacy School. All rights reserved."></span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function setLanguage(lang) {
+            const elements = document.querySelectorAll('[data-pt][data-en]');
+
+            elements.forEach(element => {
+                if (lang === 'pt') {
+                    element.textContent = element.getAttribute('data-pt');
+                } else if (lang === 'en') {
+                    element.textContent = element.getAttribute('data-en');
+                }
+            });
+
+            document.getElementById('lang-pt').classList.toggle('bg-blue-600');
+            document.getElementById('lang-pt').classList.toggle('text-white');
+            document.getElementById('lang-pt').classList.toggle('text-gray-600');
+
+            document.getElementById('lang-en').classList.toggle('text-gray-600');
+            document.getElementById('lang-en').classList.toggle('text-gray-900');
+            document.getElementById('lang-en').classList.toggle('bg-blue-600');
+            document.getElementById('lang-en').classList.toggle('text-white');
+
+            localStorage.setItem('language', lang);
+            document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
+        }
+
+        document.getElementById('lang-pt').addEventListener('click', () => setLanguage('pt'));
+        document.getElementById('lang-en').addEventListener('click', () => setLanguage('en'));
+
+        const savedLanguage = localStorage.getItem('language') || 'pt';
+        setLanguage(savedLanguage);
+    </script>
+</body>
+</html>

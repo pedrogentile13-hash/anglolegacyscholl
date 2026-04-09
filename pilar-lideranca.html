@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilar 1: Liderança | Líder em Mim 2026</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        * {
+            transition: all 0.3s ease;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #1e3a8a 100%);
+        }
+
+        .card-hover {
+            transform: translateY(0);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(30, 58, 138, 0.15);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 glass">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-gradient-to-br from-blue-900 to-blue-600 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-graduation-cap text-white text-lg"></i>
+                </div>
+                <a href="index.html" class="text-xl font-black text-blue-900 hidden sm:inline hover:text-blue-600">Anglo Legacy</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <div class="flex gap-2 bg-gray-100 rounded-full p-1">
+                    <button id="lang-pt" class="lang-btn px-4 py-2 rounded-full font-semibold text-sm bg-blue-600 text-white transition" data-lang="pt">
+                        PT
+                    </button>
+                    <button id="lang-en" class="lang-btn px-4 py-2 rounded-full font-semibold text-sm text-gray-600 hover:text-gray-900 transition" data-lang="en">
+                        EN
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20 sm:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <a href="index.html" class="inline-flex items-center gap-2 text-blue-100 hover:text-white mb-6 transition">
+                <i class="fas fa-arrow-left"></i>
+                <span data-pt="Voltar" data-en="Back"></span>
+            </a>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight mb-6" data-pt="Pilar 1: Liderança" data-en="Pillar 1: Leadership"></h1>
+            <p class="text-lg sm:text-xl text-blue-100 mb-8 max-w-2xl leading-relaxed" data-pt="Desenvolvemos líderes autênticos que inspiram e guiam com propósito, transformando equipes e comunidades." data-en="We develop authentic leaders who inspire and guide with purpose, transforming teams and communities."></p>
+        </div>
+    </section>
+
+    <!-- Conteúdo Pilar 1 -->
+    <section class="py-20 sm:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-black text-blue-900 mb-4" data-pt="Três Componentes Essenciais" data-en="Three Essential Components"></h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto" data-pt="Conheça as estratégias e metodologias que desenvolvem liderança em nossa instituição." data-en="Learn about the strategies and methodologies that develop leadership in our institution."></p>
+            </div>
+
+            <div class="grid grid-cols-1 gap-8 sm:gap-10">
+                <!-- Item 1.1 -->
+                <div class="card-hover bg-white rounded-3xl p-8 sm:p-10 border-2 border-blue-100 hover:border-blue-300">
+                    <div class="flex items-start gap-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-blue-600 to-blue-400 rounded-2xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-users-gear text-white text-3xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl sm:text-3xl font-bold text-blue-900 mb-4" data-pt="1.1 Desenvolvimento de Diretores e Coordenadores" data-en="1.1 Directors and Coordinators Development"></h3>
+                            <p class="text-gray-700 leading-relaxed mb-4 text-lg" data-pt="A excelência em liderança começa no topo. Investimos continuamente no desenvolvimento profissional de diretores e coordenadores, preparando-os para inspirar suas equipes e implementar transformações educacionais." data-en="Excellence in leadership starts at the top. We continuously invest in the professional development of directors and coordinators, preparing them to inspire their teams and implement educational transformations."></p>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-blue-600 text-xl flex-shrink-0 mt-1"></i>
+                                    <span class="text-gray-700" data-pt="Formações em gestão estratégica e liderança transformacional" data-en="Training in strategic management and transformational leadership"></span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-blue-600 text-xl flex-shrink-0 mt-1"></i>
+                                    <span class="text-gray-700" data-pt="Mentoria e coaching individualizado" data-en="Individual mentoring and coaching"></span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-blue-600 text-xl flex-shrink-0 mt-1"></i>
+                                    <span class="text-gray-700" data-pt="Comunidades de prática entre líderes" data-en="Communities of practice among leaders"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 1.2 -->
+                <div class="card-hover bg-white rounded-3xl p-8 sm:p-10 border-2 border-blue-100 hover:border-blue-300">
+                    <div class="flex items-start gap-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-blue-600 to-blue-400 rounded-2xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-book-reader text-white text-3xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl sm:text-3xl font-bold text-blue-900 mb-4" data-pt="1.2 Aprendizagem Contínua da Equipe" data-en="1.2 Continuous Team Learning"></h3>
+                            <p class="text-gray-700 leading-relaxed mb-4 text-lg" data-pt="Uma equipe aprendente é uma equipe engajada. Promovemos uma cultura de aprendizagem contínua onde todos os colaboradores têm oportunidades para crescer, inovar e contribuir com suas melhores práticas." data-en="A learning team is an engaged team. We promote a culture of continuous learning where all employees have opportunities to grow, innovate, and contribute their best practices."></p>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-blue-600 text-xl flex-shrink-0 mt-1"></i>
+                                    <span class="text-gray-700" data-pt="Programas de desenvolvimento profissional permanente" data-en="Permanent professional development programs"></span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-blue-600 text-xl flex-shrink-0 mt-1"></i>
+                                    <span class="text-gray-700" data-pt="Workshops, seminários e encontros formativos" data-en="Workshops, seminars and training meetings"></span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-blue-600 text-xl flex-shrink-0 mt-1"></i>
+                                    <span class="text-gray-700" data-pt="Partilha de conhecimento e experiências" data-en="Knowledge and experience sharing"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 1.3 -->
+                <div class="card-hover bg-white rounded-3xl p-8 sm:p-10 border-2 border-blue-100 hover:border-blue-300">
+                    <div class="flex items-start gap-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-blue-600 to-blue-400 rounded-2xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-handshake text-white text-3xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl sm:text-3xl font-bold text-blue-900 mb-4" data-pt="1.3 Parceria com Famílias e Comunidade" data-en="1.3 Family and Community Partnership"></h3>
+                            <p class="text-gray-700 leading-relaxed mb-4 text-lg" data-pt="Acreditamos que a educação é uma responsabilidade compartilhada. Desenvolvemos parcerias sólidas com famílias e comunidades, criando redes de apoio que fortalecem o desenvolvimento integral de cada aluno." data-en="We believe that education is a shared responsibility. We develop solid partnerships with families and communities, creating support networks that strengthen the integral development of each student."></p>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-blue-600 text-xl flex-shrink-0 mt-1"></i>
+                                    <span class="text-gray-700" data-pt="Engajamento regular com famílias em decisões educacionais" data-en="Regular family engagement in educational decisions"></span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-blue-600 text-xl flex-shrink-0 mt-1"></i>
+                                    <span class="text-gray-700" data-pt="Projetos comunitários que transformam realidades locais" data-en="Community projects that transform local realities"></span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-blue-600 text-xl flex-shrink-0 mt-1"></i>
+                                    <span class="text-gray-700" data-pt="Redes de apoio entre pais, educadores e líderes locais" data-en="Support networks among parents, educators and local leaders"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impacto Section -->
+    <section class="py-20 sm:py-28 bg-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-black text-blue-900 mb-12 text-center" data-pt="Impacto da Liderança" data-en="Impact of Leadership"></h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-2xl p-6 text-center border-l-4 border-blue-600">
+                    <i class="fas fa-users text-blue-600 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2" data-pt="Equipes Engajadas" data-en="Engaged Teams"></h3>
+                    <p class="text-gray-600" data-pt="Colaboradores motivados e alinhados com a missão institucional" data-en="Motivated employees aligned with the institutional mission"></p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 text-center border-l-4 border-blue-600">
+                    <i class="fas fa-star text-blue-600 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2" data-pt="Inovação Contínua" data-en="Continuous Innovation"></h3>
+                    <p class="text-gray-600" data-pt="Implementação de práticas transformadoras na gestão educacional" data-en="Implementation of transformative practices in educational management"></p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 text-center border-l-4 border-blue-600">
+                    <i class="fas fa-network-wired text-blue-600 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2" data-pt="Comunidades Fortes" data-en="Strong Communities"></h3>
+                    <p class="text-gray-600" data-pt="Parcerias solidárias que transformam realidades sociais" data-en="Solidary partnerships that transform social realities"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-white py-16 sm:py-24">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl sm:text-4xl font-black text-blue-900 mb-6" data-pt="Conheça os Outros Pilares" data-en="Discover the Other Pillars"></h2>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="pilar-cultura.html" class="bg-amber-400 text-blue-900 font-bold py-3 px-8 rounded-full hover:bg-amber-300 transition text-lg" data-pt="Pilar 2: Cultura" data-en="Pillar 2: Culture"></a>
+                <a href="pilar-academico.html" class="bg-purple-600 text-white font-bold py-3 px-8 rounded-full hover:bg-purple-700 transition text-lg" data-pt="Pilar 3: Excelência" data-en="Pillar 3: Excellence"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12 sm:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-300 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-graduation-cap text-blue-900 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-black">Anglo Legacy</h3>
+                            <p class="text-xs text-blue-100" data-pt="Educação Transformadora" data-en="Transformative Education"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4" data-pt="Navegação" data-en="Navigation"></h4>
+                    <ul class="space-y-2 text-blue-100">
+                        <li><a href="index.html" class="hover:text-amber-400 transition" data-pt="Início" data-en="Home"></a></li>
+                        <li><a href="pilar-lideranca.html" class="hover:text-amber-400 transition" data-pt="Liderança" data-en="Leadership"></a></li>
+                        <li><a href="pilar-cultura.html" class="hover:text-amber-400 transition" data-pt="Cultura" data-en="Culture"></a></li>
+                        <li><a href="pilar-academico.html" class="hover:text-amber-400 transition" data-pt="Excelência" data-en="Excellence"></a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4" data-pt="Redes Sociais" data-en="Social Networks"></h4>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-blue-700 hover:bg-amber-400 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-blue-700 hover:bg-amber-400 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-blue-700 hover:bg-amber-400 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-blue-700 hover:bg-amber-400 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-blue-700 pt-8">
+                <p class="text-center text-blue-100 text-sm">
+                    <span data-pt="© 2026 Anglo Morumbi - Legacy School. Todos os direitos reservados." data-en="© 2026 Anglo Morumbi - Legacy School. All rights reserved."></span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function setLanguage(lang) {
+            const elements = document.querySelectorAll('[data-pt][data-en]');
+
+            elements.forEach(element => {
+                if (lang === 'pt') {
+                    element.textContent = element.getAttribute('data-pt');
+                } else if (lang === 'en') {
+                    element.textContent = element.getAttribute('data-en');
+                }
+            });
+
+            document.getElementById('lang-pt').classList.toggle('bg-blue-600');
+            document.getElementById('lang-pt').classList.toggle('text-white');
+            document.getElementById('lang-pt').classList.toggle('text-gray-600');
+
+            document.getElementById('lang-en').classList.toggle('text-gray-600');
+            document.getElementById('lang-en').classList.toggle('text-gray-900');
+            document.getElementById('lang-en').classList.toggle('bg-blue-600');
+            document.getElementById('lang-en').classList.toggle('text-white');
+
+            localStorage.setItem('language', lang);
+            document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
+        }
+
+        document.getElementById('lang-pt').addEventListener('click', () => setLanguage('pt'));
+        document.getElementById('lang-en').addEventListener('click', () => setLanguage('en'));
+
+        const savedLanguage = localStorage.getItem('language') || 'pt';
+        setLanguage(savedLanguage);
+    </script>
+</body>
+</html>
